@@ -14,9 +14,13 @@ class Nexhealth < Formula
 
   def caveats
     <<~EOS
-      Get started by authenticating with your NexHealth API key:
+      Get started:
 
-        nexhealth auth login --api-key YOUR_API_KEY
+        # New to NexHealth? Sign up and authenticate in one step:
+        nexhealth auth signup
+
+        # Already have an API key? Login interactively:
+        nexhealth auth login
 
       Then configure your subdomain and location:
 
