@@ -12,6 +12,23 @@ class Nexhealth < Formula
     bin.install_symlink Dir["#{libexec}/bin/*"]
   end
 
+  def caveats
+    <<~EOS
+      Get started by authenticating with your NexHealth API key:
+
+        nexhealth auth login --api-key YOUR_API_KEY
+
+      Then configure your subdomain and location:
+
+        nexhealth institutions list
+        nexhealth config set subdomain your-practice-subdomain
+        nexhealth locations list
+        nexhealth config set location_id 12345
+
+      Run `nexhealth --help` for all available commands.
+    EOS
+  end
+
   test do
     assert_match version.to_s, shell_output("#{bin}/nexhealth --version")
   end
