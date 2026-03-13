@@ -1,8 +1,8 @@
 class Nexhealth < Formula
   desc "CLI for the NexHealth API"
   homepage "https://github.com/nex-health/nexhealth-cli"
-  url "https://github.com/nex-health/homebrew-nexhealth/releases/download/v0.3.4/nexhealth-cli-0.3.4.tar.gz"
-  sha256 "2999c5853fd6de3e5ea2b9058b1c5c3f41691ac27b83ff8e4567d9e24d8d3405"
+  url "https://github.com/nex-health/homebrew-nexhealth/releases/download/v0.4.0/nexhealth-cli-0.4.0.tar.gz"
+  sha256 "f7a8a525563a3b687d18eaf46c6d7ba1b1d068f1a0d1ef3589c5381c1e1c753b"
   license "MIT"
 
   depends_on "node"
